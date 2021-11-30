@@ -1,0 +1,13 @@
+ ˛∫æ   7 B  (capg/spring/security/SecurityConfiguration  ]org/springframework/security/config/annotation/web/configuration/WebSecurityConfigurerAdapter <init> ()V Code
+  	   LineNumberTable LocalVariableTable this *Lcapg/spring/security/SecurityConfiguration; 	configure h(Lorg/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder;)V 
+Exceptions  java/lang/Exception
+    corg/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder   inMemoryAuthentication ()Lorg/springframework/security/config/annotation/authentication/configurers/provisioning/InMemoryUserDetailsManagerConfigurer;  naveen
+    {org/springframework/security/config/annotation/authentication/configurers/provisioning/InMemoryUserDetailsManagerConfigurer    withUser ú(Ljava/lang/String;)Lorg/springframework/security/config/annotation/authentication/configurers/provisioning/UserDetailsManagerConfigurer$UserDetailsBuilder; " password
+ $ & % Üorg/springframework/security/config/annotation/authentication/configurers/provisioning/UserDetailsManagerConfigurer$UserDetailsBuilder "   ( java/lang/String * admin
+ $ , - . roles ù([Ljava/lang/String;)Lorg/springframework/security/config/annotation/authentication/configurers/provisioning/UserDetailsManagerConfigurer$UserDetailsBuilder; auth eLorg/springframework/security/config/annotation/authentication/builders/AuthenticationManagerBuilder; MethodParameters getPasswordEncoder @()Lorg/springframework/security/crypto/password/PasswordEncoder; RuntimeVisibleAnnotations -Lorg/springframework/context/annotation/Bean;
+ 7 9 8 @org/springframework/security/crypto/password/NoOpPasswordEncoder : 3 getInstance 
+SourceFile SecurityConfiguration.java TLorg/springframework/security/config/annotation/web/configuration/EnableWebSecurity; InnerClasses @ sorg/springframework/security/config/annotation/authentication/configurers/provisioning/UserDetailsManagerConfigurer UserDetailsBuilder !               /     *∑ ±    
+                                 X     +∂ ∂ !∂ #Ω 'Y)S∂ +W±    
+                           / 0  1    /    2 3  4     5      .     ∏ 6∞    
+                     ;    < 4     =   >   
+  $ ? A 
